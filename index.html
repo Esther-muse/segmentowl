@@ -3,17 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Segmentation AI</title>
+  <title>SegmentOwl: Turn Customer Data into Revenue</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { font-size: 2.5em; }
-    p { font-size: 1.2em; max-width: 600px; margin: auto; }
-    button { padding: 10px 20px; font-size: 1em; margin-top: 20px; }
+    :root {
+      --emerald: #10b981;
+      --black: #000000;
+      --white: #ffffff;
+      --gray: #d1d5db;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: var(--emerald);
+      margin-bottom: 0.4em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin-bottom: 1em;
+      color: var(--gray);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.5em 0;
+    }
+
+    ul li::before {
+      content: '✅';
+      margin-right: 8px;
+      color: var(--emerald);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1.5em;
+    }
+
+    input {
+      padding: 12px;
+      border: 1px solid var(--gray);
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: var(--emerald);
+      color: var(--black);
+      padding: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #059669;
+    }
   </style>
 </head>
 <body>
-  <h1>Smart Segmentation AI</h1>
-  <p>Automatically segment your audience and generate AI-powered campaign flows to boost engagement and revenue.</p>
-  <button onclick="alert('Coming Soon!')">Join the Waitlist</button>
+  <div class="container">
+    <h1>SegmentOwl: Turn Customer Data into Revenue-Boosting Campaigns</h1>
+    <h2>Smarter Segmentation. Smarter Campaigns. More Sales.</h2>
+    <p>Let AI instantly segment your list and recommend high-converting next steps—without guesswork.</p>
+    
+    <ul>
+      <li>Boost engagement</li>
+      <li>Increase email revenue</li>
+      <li>Save hours on strategy</li>
+    </ul>
+
+    <form>
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Get Early Access</button>
+    </form>
+  </div>
 </body>
 </html>
+
